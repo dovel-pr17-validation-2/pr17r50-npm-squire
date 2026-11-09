@@ -1,0 +1,44 @@
+{
+    "name": "squire-rte",
+    "version": "2.4.10",
+    "description": "Squire is an HTML5 rich text editor, which provides powerful cross-browser normalisation, whilst being supremely lightweight and flexible.",
+    "main": "dist/squire.mjs",
+    "types": "dist/types/Squire.d.ts",
+    "type": "module",
+    "scripts": {
+        "test": "vitest run",
+        "build": "./build.js && tsc",
+        "lint": "eslint source",
+        "fix": "eslint --fix source && prettier --write source"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neilj/Squire.git"
+    },
+    "keywords": [
+        "wysiwyg",
+        "editor",
+        "text",
+        "html",
+        "squire"
+    ],
+    "author": "Neil Jenkins",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/neilj/Squire/issues"
+    },
+    "homepage": "https://github.com/neilj/Squire",
+    "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "esbuild": "^0.28.2",
+        "eslint": "^10.10.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.6",
+        "jsdom": "^29.1.1",
+        "prettier": "^3.9.6",
+        "tslib": "^2.8.1",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.70.0",
+        "vitest": "^4.1.11"
+    }
+}
